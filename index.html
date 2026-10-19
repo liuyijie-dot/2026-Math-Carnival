@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SST Math Carnival 2026 – Event Day Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f3fa;--card:#fff;--ink:#1b1b2f;--mut:#5d5e75;--line:#dcdbea;--s1:#0b8a7a;--s2:#a86b00;--s3:#7447d9;--x:#262640;--on:#fff;--ok:#1d8a4e;--hl:#ffe9a8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12121c;--card:#1c1c2b;--ink:#ececf8;--mut:#a3a4bb;--line:#34354b;--s1:#2fc7b2;--s2:#f0b429;--s3:#a98fff;--x:#e4e4f4;--on:#12121c;--ok:#4fd187;--hl:#4a3d10}}
+:root[data-theme="dark"]{--bg:#12121c;--card:#1c1c2b;--ink:#ececf8;--mut:#a3a4bb;--line:#34354b;--s1:#2fc7b2;--s2:#f0b429;--s3:#a98fff;--x:#e4e4f4;--on:#12121c;--ok:#4fd187;--hl:#4a3d10}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "DM Sans",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.1;margin:0}
+h1{font-size:2rem;font-weight:800}h2{font-size:1.25rem;margin:20px 0 8px}
+.sub{color:var(--mut);margin:4px 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+button{font:inherit;color:inherit;cursor:pointer}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;min-height:36px}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--s3);outline-offset:2px}
+.slot{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line)}
+.slot:first-of-type{border:0}.slot.me{background:var(--hl);margin:0 -8px;padding:6px 8px;border-radius:8px}
+.st{font-weight:700;white-space:nowrap}
+.floor{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px}
+.top{display:grid;grid-template-columns:repeat(9,1fr);gap:4px;margin:0 56px 4px}
+.mid{display:grid;grid-template-columns:52px 1fr 52px;gap:4px}
+.col{display:grid;gap:4px}
+.centre{border:2px dashed var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:.85rem;padding:8px}
+.c{position:relative;border:0;border-radius:8px;color:var(--on);min-height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;padding:2px}
+.c b{font:800 1rem "Bricolage Grotesque",sans-serif}.c i{font-size:.6rem;font-style:normal;opacity:.9}
+.S1{background:var(--s1)}.S2{background:var(--s2)}.S3{background:var(--s3)}.X{background:var(--x)}
+.c.done{opacity:.45}.c.done::after{content:"✓";position:absolute;top:1px;right:3px;font-size:.7rem}
+.c.sel{outline:3px solid var(--ink);outline-offset:1px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:.85rem;color:var(--mut);margin:8px 2px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.row:first-child{border:0}.tag{color:var(--on);border-radius:8px;padding:4px 8px;font-weight:700;min-width:62px;text-align:center}
+.pm{text-align:right;font-size:.85rem;color:var(--mut)}.pm b{color:var(--ink);font-size:1rem}
+.btn{border:1px solid var(--ink);border-radius:10px;padding:8px 14px;background:var(--ink);color:var(--bg);font-weight:700;min-height:40px}
+.btn.alt{background:transparent;color:var(--ink)}
+.bar{height:12px;background:var(--line);border-radius:9px;overflow:hidden;margin:6px 0}.bar>i{display:block;height:100%;background:var(--ok)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}.stats b{display:block;font:800 1.6rem "Bricolage Grotesque",sans-serif}
+ol,ul{padding-left:20px;margin:6px 0}li{margin:4px 0}a{color:var(--s3)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;border:0;background:none;padding:14px 4px;min-height:56px;font-weight:700;color:var(--mut)}
+nav button[aria-selected=true]{color:var(--ink);box-shadow:inset 0 3px var(--s3)}
+select{font:inherit;padding:6px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+@media(prefers-reduced-motion:no-preference){.bar>i{transition:width .3s}}
+</style></head><body><main>
+<h1>SST Math Carnival 2026</h1>
+<p class="sub">Event day guide for students and teachers. Atrium. Phones go in the box at each booth, so check this while you queue or move.</p>
+<div class="card" id="slots"></div>
+<section id="p-map"></section><section id="p-list" hidden></section><section id="p-plan" hidden></section><section id="p-rules" hidden></section>
+</main>
+<nav role="tablist"><button role="tab" data-tab="map" aria-selected="true">Map</button><button role="tab" data-tab="list" aria-selected="false">Booths</button><button role="tab" data-tab="plan" aria-selected="false">My plan</button><button role="tab" data-tab="rules" aria-selected="false">Rules</button></nav>
+<script>
+const RAW=`S1-01|Code cracking|1|2
+S1-02|Number proof|5|3
+S1-03|Matchsticks|1|2
+S1-04|Digits and operations|1|2
+S1-05|Choose the operators|3|2
+S1-06|Puzzle pieces|4|3
+S1-07|Coins|3|2
+S1-08|Marbles and logic|1|2
+S1-09|Balance scales|1|2
+S1-10|Digit clues|2|2
+S2-01|Number riddle|1|2
+S2-02|Find the value|2|2
+S2-03|Light bulbs|2|2
+S2-04|Counters|5|3
+S2-05|Geometry|4|3
+S2-06|Matchsticks|1|2
+S2-07|Count the triangles|2|2
+S2-08|Dots and lines|1|2
+S2-09|Code breaking|3|3
+S2-10|Palindrome clock|4|3
+S3-01|Shortest route|2|3
+S3-02|Digit multiplication|3|3
+S3-03|Probability|2|2
+S3-04|Pattern|2|2
+S3-05|Algebra|2|2
+S3-06|Seating arrangements|2|2
+S3-07|River crossing|4|3
+S3-08|Chase|2|3
+S3-09|Functions|2|2
+S3-10|Areas|3|2
+TDP 1|Pattern sums (show working)|5|3
+TDP 2|Counting coordinates (show working)|4|3
+TDP 3|Volume (show working)|4|3
+BONUS|Estimation|3|3`;
+const D=RAW.split('\n').map(l=>{const[id,t,p,m]=l.split('|');return{id,t,p:+p,m:+m,lv:/^S\d/.test(id)?id.slice(0,2):'X'}});
+const BY=Object.fromEntries(D.map(x=>[x.id,x]));
+const TOP=['S1-05','S2-05','S3-05','S1-06','S2-06','S3-06','S1-07','S2-07','S3-07'];
+const LEFT=['S3-04','S2-04','S1-04','S3-03','S2-03','S1-03','S3-02','S2-02','S1-02','S3-01','S2-01','S1-01'];
+const RIGHT=['S1-08','S2-08','S3-08','S1-09','S2-09','S3-09','S1-10','S2-10','S3-10','TDP 1','TDP 2','TDP 3'];
+const SL={S3:[['2026-10-19T12:00','2026-10-19T13:15','Mon 19 Oct, 12:00–1:15pm']],S1:[['2026-10-21T10:40','2026-10-21T12:00','Wed 21 Oct, 10:40am–12:00pm']],S2:[['2026-10-22T10:00','2026-10-22T10:40','Thu 22 Oct, Part 1, 10:00–10:40am'],['2026-10-22T11:20','2026-10-22T12:00','Thu 22 Oct, Part 2, 11:20am–12:00pm']]};
+const MINS={S1:80,S2:40,S3:75};
+let st={lv:'',done:{},sel:'',f:'All',sort:'order',tab:'map'};
+try{const s=JSON.parse(localStorage.getItem('mc26')||'{}');st.lv=s.lv||'';st.done=s.done||{}}catch(e){}
+const save=()=>{try{localStorage.setItem('mc26',JSON.stringify({lv:st.lv,done:st.done}))}catch(e){}};
+const $=s=>document.querySelector(s);
+function loc(id){let i=TOP.indexOf(id);if(i>=0)return`Top row, position ${i+1} of 9 from the left on the map`;
+i=LEFT.indexOf(id);if(i>=0)return`Left side, ${12-i} from the bottom`;
+i=RIGHT.indexOf(id);if(i>=0)return`Right side, ${i+1} from the top`;return'Ask a Math rep or teacher on the day'}
+const ppm=x=>(x.p/x.m).toFixed(1);
+function status(a,b){const n=Date.now(),s=Date.parse(a+':00+08:00'),e=Date.parse(b+':00+08:00');
+if(n>=e)return'Finished';if(n>=s)return'Happening now';const d=s-n,h=Math.floor(d/36e5),m=Math.round(d%36e5/6e4);
+return h>=24?`In ${Math.floor(h/24)}d ${h%24}h`:`Starts in ${h}h ${m}m`}
+function cell(id){const x=BY[id],n=x.lv==='X'?id.slice(-1):id.slice(3),l=x.lv==='X'?'TDP':x.lv;
+return`<button class="c ${x.lv}${st.done[id]?' done':''}${st.sel===id?' sel':''}" data-id="${id}" aria-label="Booth ${id}"><b>${n}</b><i>${l}</i></button>`}
+function slots(){let h='<h3>Your slot</h3><div class="chips">'+['S1','S2','S3'].map(l=>`<button class="chip" data-lv="${l}" aria-pressed="${st.lv===l}">I’m in ${l}</button>`).join('')+'</div>';
+for(const l of ['S3','S1','S2'])for(const[a,b,t]of SL[l])h+=`<div class="slot${st.lv===l?' me':''}"><span><b>${l}</b> ${t}</span><span class="st">${status(a,b)}</span></div>`;
+$('#slots').innerHTML=h}
+function detail(){const x=BY[st.sel];if(!x)return'<p class="sub">Tap a booth on the map for details.</p>';
+return`<div class="card"><h3>${x.id}: ${x.t}</h3><p>${x.p} point${x.p>1?'s':''} (max) · ${x.m} min · ${ppm(x)} pts/min<br>${loc(x.id)}</p><button class="btn${st.done[x.id]?' alt':''}" data-done="${x.id}">${st.done[x.id]?'Undo done':'Mark as done'}</button></div>`}
+function map(){$('#p-map').innerHTML=`<div class="legend"><span><i class="dot S1"></i>Sec 1</span><span><i class="dot S2"></i>Sec 2</span><span><i class="dot S3"></i>Sec 3</span><span><i class="dot X"></i>TDP</span></div>
+<div class="floor"><div class="top">${TOP.map(cell).join('')}</div><div class="mid"><div class="col">${LEFT.map(cell).join('')}</div><div class="centre">Queue behind the line, as a group. Booths 01 to 04 run up the left, 05 to 07 across the top, 08 to 10 and TDP down the right.</div><div class="col">${RIGHT.map(cell).join('')}</div></div></div>
+<p class="sub">Layout follows the planning sheet. If floor signs differ, follow the signs.</p>${detail()}`}
+function row(x){return`<div class="row"><span class="tag ${x.lv}">${x.id}</span><div><b>${x.t}</b><br><small>${loc(x.id)}</small></div><div class="pm"><b>${x.p} pt</b> · ${x.m} min<br><button class="chip" data-done="${x.id}" aria-pressed="${!!st.done[x.id]}">${st.done[x.id]?'Done ✓':'Mark done'}</button></div></div>`}
+function list(){let a=D.filter(x=>st.f==='All'||x.lv===st.f);
+if(st.sort==='pts')a=[...a].sort((u,v)=>v.p-u.p);if(st.sort==='ppm')a=[...a].sort((u,v)=>v.p/v.m-u.p/u.m);
+$('#p-list').innerHTML=`<div class="chips">${['All','S1','S2','S3','X'].map(f=>`<button class="chip" data-f="${f}" aria-pressed="${st.f===f}">${f==='X'?'Extra':f}</button>`).join('')}</div>
+<label>Sort: <select id="sort"><option value="order">Booth order</option><option value="pts">Most points</option><option value="ppm">Points per minute</option></select></label>
+<div class="card">${a.map(row).join('')}</div>`;$('#sort').value=st.sort}
+function plan(){const dn=D.filter(x=>st.done[x.id]),pts=dn.reduce((s,x)=>s+x.p,0),mn=dn.reduce((s,x)=>s+x.m,0),tot=D.reduce((s,x)=>s+x.p,0),sm=MINS[st.lv];
+const nx=D.filter(x=>!st.done[x.id]).sort((u,v)=>v.p/v.m-u.p/u.m||v.p-u.p).slice(0,6);
+$('#p-plan').innerHTML=`<div class="card"><div class="stats"><div><b>${dn.length}/${D.length}</b>booths done</div><div><b>${pts}</b>of ${tot} pts</div><div><b>${mn}</b>task min${sm?' of '+sm:''}</div></div>
+<div class="bar"><i style="width:${Math.round(pts/tot*100)}%"></i></div>
+<p class="sub">Task time excludes queueing. Points shown are the maximum per booth; some tasks give part marks. Secret mission: 20 points, revealed on the day.</p></div>
+<h2>Best next picks</h2><p class="sub">Highest points per task minute that you haven’t ticked off.</p><div class="card">${nx.map(row).join('')}</div>
+<button class="btn alt" data-reset="1">Clear my ticks</button>`}
+function rules(){$('#p-rules').innerHTML=`<h2>How each booth works</h2><div class="card"><ol><li>Queue behind the line together. No splitting up.</li><li>Put your smart devices into the box.</li><li>The Math rep flips the QR code to reveal the question.</li><li>The Math rep starts the timer.</li><li>When time is up, the question is flipped back.</li><li>Scan the QR code to submit your answer.</li></ol></div>
+<h2>Good to know</h2><div class="card"><ul><li>Groups of 4 or 5, all wearing the same colour wristband. Groups missing a wristband are removed from the queue.</li><li>Each game takes 2 to 3 minutes and awards different points by difficulty.</li><li>Calculators and writing materials are allowed.</li><li>Re-queue to retry a game. You can resubmit, and only your last submission is marked.</li><li>Keep bags and valuables with you at all times.</li><li>Toilet visits need your teacher’s permission.</li><li>Disruptive behaviour means removal from the activity. Report any injury immediately.</li></ul></div>
+<h2>Teachers and Math reps</h2><div class="card"><ul><li>Reps flip questions, run timers, wave groups on, and reset equipment.</li><li>Each rep looks after the same booth number across levels, for example S1-01, S2-01 and S3-01.</li></ul></div>
+<h2>Resources</h2><div class="card"><ul><li><a href="https://docs.google.com/presentation/d/181ptAds9e7PaAFeN58j67UiDpikXqiEzdTL4YUkvV9M/edit" target="_blank" rel="noopener">Event day briefing slides</a></li><li><a href="https://drive.google.com/file/d/1utrZ6TuZnv-gP44kxy03lKTJ_hIWqd55/view" target="_blank" rel="noopener">2025 programme, for reference</a></li><li><a href="https://drive.google.com/file/d/1AfCxp7buqGttipvJbGMElOyA1oStgztD/view" target="_blank" rel="noopener">2024 programme, for reference</a></li><li><a href="https://drive.google.com/drive/folders/1zwh68JiL0OqhKXO3I1d7O4uYU5pB-zic" target="_blank" rel="noopener">Carnival Drive folder (staff accounts)</a></li></ul></div>`}
+function render(){slots();map();list();plan();rules();
+for(const t of ['map','list','plan','rules'])$('#p-'+t).hidden=st.tab!==t;
+document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===st.tab))}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-id],[data-tab],[data-lv],[data-f],[data-done],[data-reset]');if(!t)return;const d=t.dataset;
+if(d.id)st.sel=d.id;if(d.tab)st.tab=d.tab;if(d.lv)st.lv=st.lv===d.lv?'':d.lv;if(d.f)st.f=d.f;
+if(d.done){st.done[d.done]=!st.done[d.done];if(!st.done[d.done])delete st.done[d.done]}
+if(d.reset&&confirm('Clear all your ticks?'))st.done={};
+save();render()});
+document.addEventListener('change',e=>{if(e.target.id==='sort'){st.sort=e.target.value;render()}});
+render();setInterval(slots,30000);
+</script></body></html>
